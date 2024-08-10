@@ -1,61 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Fallenapple</title>
-	<link rel="stylesheet" href="main.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <title>fallenapple | Cybersecurity & Bug Bounty Hunter</title>
 </head>
 <body>
-	
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">fallenapple</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#Work" class="nav-link">Work</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">    
+            <button class="btn">Let’s Connect</button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
 
-	<div class="pic">
-		<img src="./main-imgs/fallenapple.png" title="fallenapple" alt="image">
-	</div>
 
-	<div class="Name">
-		<h1>fallenapple</h1>
-	</div>
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>fallenapple</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Professional Bug Bounty Hunter and Aspiring Penetration Tester.</p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn">Hire Me</button>
+                <button class="btn">Explore My Work<i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="social_icons">
+                <div class="icon"  ><a href="https://www.instagram.com/newtonfallenapple"><i class="uil uil-instagram"></i></a></div>
+                <div class="icon"><a href="https://www.linkedin.com/in/fallenapple"><i class="uil uil-linkedin-alt"></i></a></div>
+                <div class="icon"><a href="https://github.com/fallenapplle"><i class="uil uil-github-alt"></i></a></div>
+               
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="assets/images/fallenapple.png" alt="Cybersecurity">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div>
 
-	<div class="Work">
-		<h1>Security Researcher & Bug bounty hunter.</h1>
-	</div>
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My Journey</h3>
+                    <p style="color: white;">I am a passionate bug bounty hunter with a year of hands-on experience in identifying and exploiting vulnerabilities. My journey in cybersecurity is driven by curiosity and a relentless pursuit of knowledge. I'm now expanding my expertise into penetration testing and cybersecurity roles, ready to tackle challenges in these domains.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Key Skills</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>Web Application Security</span>
+                        <span>Vulnerability Assessment</span>
+                        <span>Penetration Testing</span>
+                        <span>OSINT</span>
+                        <span>Network Security</span>
+                        <span>Python Scripting</span>
+                        <span>Linux</span>
+                        <span>Report Writing</span>
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+       </section>
 
+       <!-- -------------- PROJECT BOX ---------------- -->
 
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Work</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                <i class="uil uil-shield-check"></i>
+                <h3>Bug Bounty Successes</h3>
+                <label>Reported 30+ vulnerabilities</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-envelope"></i>
+                <h3>Automation Scripts</h3>
+                <label>Developed custom scripts for automated scanning</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-award"></i>
+                <h3>Experience</h3>
+                <label>1+ Years in the BugBounty</label>
+            </div>
+          </div>
+       </section>
 
+       <!-- -------------- CONTACT BOX ---------------- -->
 
-	<div class="Contact">
-		<h1>Contact </h1>
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in Touch</h1>
+            <span>Interested in working together? Contact me here.</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    
+                    <h2>Reach Out <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i>   Email: fallenapple@bugcrowdninja.com</p>
+                </div>
+             </div>
+             <div class="col">
+                
+             </div>
+          </div>
+       </section>
 
-		<div class="ico">
-			<a href="https://github.com/fallenapplle/">
-				<i class="fa fa-github  social" title="Github" ></i>
-			</a>
-		</div>
+    </main>
 
-		<div class="ico">
-			<a href="https://twitter.com/fallenapple">
-				<i class="fa fa-twitter social" title="Twitter" ></i>
-			</a>
-		</div>
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p style="color: aliceblue;">fallenapple</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#Work">Work</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><a href="https://www.instagram.com/newtonfallenapple"><i class="uil uil-instagram"></i></a></div>
+            <div class="icon"><a href="https://www.linkedin.com/in/fallenapple"><i class="uil uil-linkedin-alt"></i></a></div>
+            <div class="icon"><a href="https://github.com/fallenapplle"><i class="uil uil-github-alt"></i></a></div>
+        </div>
+        
+    </footer>
 
-		<div class="ico">
-			<a href="mailto:fallenapple@wearehacerone.com">   
-				<i class="fa fa-envelope social" title="E-Mail" ></i>
-			</a>
-		</div>
+    </div>
 
-	
-	</div>
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-	<footer class="footer">
-		<a href="https://fallenapplle.github.io/">fallenapple</a>		
-	</footer>
-		
-    <script src="./main.js"></script>
-	
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
